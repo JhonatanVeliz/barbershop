@@ -1,0 +1,65 @@
+                                    /* CUSTOMPROPERTIES */
+:root{
+    --color-black: rgba(0, 0, 0, 0.95);
+    --color-black-transparent: rgba(0, 0, 0, 0.576);
+    --color-white: rgb(223, 223, 223);
+    --color-vino: rgb(143, 18, 18);
+    --font-title: 'Quicksand';
+    --font-text: 'montserrat';
+    --font-btn: 'Bebas Neue';
+}
+                                    /* HEADER */
+
+.header-horario{
+    width: 100%;
+}
+.section{
+    min-height: 90vh;
+}
+                                    /* MAIN */
+.main{
+    background: url(../img/bk-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+    background-color: var(--color-black-transparent);
+    padding: 4rem;
+}
+.title{
+    color: var(--color-white);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-family: var(--font-btn);
+}
+.subtitle{
+    font-family: var(--font-title);
+    color: var(--color-white);
+    font-size: 3rem;
+}
+
+.box-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    font-family: var(--font-text);
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 690px) {
+    .title{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 2rem;
+    }
+}
